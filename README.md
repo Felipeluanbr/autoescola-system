@@ -57,7 +57,11 @@ autoescola-system/
         ├── layout/              # Grid, navbar, footer
         ├── pages/               # CSS específico por página
         ├── vendor/              # Bibliotecas externas
-        └── global.css           # Estilos globais
+        ├── global.css           # Estilos globais
+        ├── main.css             # Arquivo principal css
+        ├── main.scss            # Arquivo principal scss
+                 
+
 
 ## Em desenvolviento 
  
