@@ -22,7 +22,7 @@
  - JavaScript
 
 ## Estrutura do Projeto
-
+```
 autoescola-system/
 │
 ├── README.md
