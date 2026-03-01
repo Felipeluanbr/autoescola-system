@@ -31,11 +31,11 @@ autoescola-system/
 │
 └── app/
     │
-    ├── api/                         # Integrações e comunicação com backend
+    ├── api/                     # Integrações e comunicação com backend
     │
     ├── assets/
-    │   ├── fonts/                   # Fontes do projeto
-    │   └── images/                  # Imagens e ícones
+    │   ├── fonts/               # Fontes do projeto
+    │   └── images/              # Imagens e ícones
     │
     ├── pages/
     │   ├── landing-page/
@@ -48,17 +48,16 @@ autoescola-system/
     │   └── student-registration/    # Cadastro de alunos
     │
     ├── scripts/
-    │   ├── commons/                 # Funções reutilizáveis
-    │   ├── services/                # Regras de negócio / API calls
-    │   └── vendor/                  # Scripts externos
+    │   ├── commons/             # Funções reutilizáveis
+    │   ├── services/            # Regras de negócio / API calls
+    │   └── vendor/              # Scripts externos
     │
     └── styles/
-        ├── components/              # Botões, cards, inputs, etc.
-        ├── layout/                  # Grid, navbar, footer
-        ├── pages/                   # CSS específico por página
-        ├── vendor/                  # Bibliotecas externas
-        └── global.css               # Estilos globais
-
+        ├── components/          # Botões, cards, inputs, etc.
+        ├── layout/              # Grid, navbar, footer
+        ├── pages/               # CSS específico por página
+        ├── vendor/              # Bibliotecas externas
+        └── global.css           # Estilos globais
 
 ## Em desenvolviento 
  
