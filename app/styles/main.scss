@@ -3,5 +3,6 @@
 @use 'abstracts/spacing';
 
 // base
+@use 'base/normalize';
 @use 'base/reset';
 @use 'base/globals';
