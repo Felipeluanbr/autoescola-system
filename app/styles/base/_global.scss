@@ -1,9 +1,12 @@
+@use '../variables/fonts';
+
+
 html {
-  font-size: $base-font-size;
+  font-size: fonts.$base-font-size;
   
 }
 
 body{
-    font-family: $font-primary ;
+    font-family: fonts.$font-primary ;
      font-size: 1.6rem;
 }

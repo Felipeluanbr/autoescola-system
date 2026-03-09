@@ -1,8 +1,13 @@
-@use 'abstracts/colors';
-@use 'abstracts/fonts';
-@use 'abstracts/spacing';
+@use './variables/color';
+@use './variables/fonts';
+@use './variables/spacing';
 
+
+@use './base/global';
+@use './base/normalize';
+@use './base/reset';
+
+
+@use './pages/landing-page';
 // base
-@use 'base/normalize';
-@use 'base/reset';
-@use 'base/globals';
+
