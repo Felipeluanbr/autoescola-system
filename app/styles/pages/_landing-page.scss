@@ -3,26 +3,24 @@
 @use "../variables/spacing";
 
 body {
+  width: 100%;
   font-family: fonts.$font-primary;
   a {
     text-decoration: none;
   }
 }
-main{
-    margin-top: 4rem;
+main {
+  margin-top: 4rem;
 }
 
 .header {
- background-color: rgba(0, 0, 0, 0.93);
+  background-color: rgba(0, 0, 0, 0.93);
   height: 4rem;
-  width: 100%; 
+  width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
   top: 0;
-
-
-  
 
   .header__container {
     width: 70%;
@@ -30,8 +28,8 @@ main{
     justify-content: space-between;
     align-items: center;
 
-    .header__logo img{
-        height: 3rem;
+    .header__logo img {
+      height: 1rem;
     }
 
     .header__list {
@@ -40,7 +38,7 @@ main{
       align-items: center;
 
       a {
-        color: color.$color-text;
+        color: color.$color-light;
       }
       a:hover {
         color: color.$color-secondary;
@@ -60,13 +58,85 @@ main{
           font-weight: fonts.$font-semibold;
           font-size: 0.9rem;
         }
-      }  .button:hover{
-            background: color.$color-light;
-        }
+      }
+      .button:hover {
+        background: color.$color-light;
+      }
     }
   }
 }
 
+.banner {
+  background: color.$color-primary;
+  height: 100vh;
+  color: color.$color-light;
+  display: flex;
+  justify-content: center;
 
+  .banner__container {
+    width: 70%;
+    display: flex;
+    align-items: center;
 
-   
+    .banner__text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 50%;
+
+      .banner__title {
+        font-size: fonts.$font-4xl;
+        font-weight: fonts.$font-extra;
+        width: 80%;
+        span {
+          color: color.$color-secondary;
+          font-style: italic;
+        }
+      }
+
+      .banner__subtitle {
+        width: 80%;
+        color: color.$color-text;
+      }
+
+      .banner__text-cta {
+        display: flex;
+        gap: 2rem;
+        a {
+          padding: 1rem 2rem;
+          border-radius: 0.5rem;
+          font-weight: fonts.$font-extra;
+          gap: 0.5rem;
+          display: flex;
+        }
+
+        .banner__link--whatsApp {
+          background: color.$color-secondary;
+          color: color.$color-primary;
+        }
+
+        .banner__link--whatsAppPrimary {
+          border: solid 0.09rem color.$color-text;
+          color: color.$color-light;
+          i {
+            color: color.$color-secondary;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .primary {
+        background: color.$color-secondary;
+        color: color.$color-primary;
+        font-size: fonts.$font-mn;
+        border-radius: 0.5rem;
+        height: 1.2rem;
+        width: 11rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-weight: fonts.$font-medium;
+      }
+    }
+  }
+}

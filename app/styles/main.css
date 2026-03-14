@@ -373,6 +373,7 @@ table {
 }
 
 body {
+  width: 100%;
   font-family: "Roboto", sans-serif;
 }
 body a {
@@ -399,7 +400,7 @@ main {
   align-items: center;
 }
 .header .header__container .header__logo img {
-  height: 3rem;
+  height: 1rem;
 }
 .header .header__container .header__list {
   display: flex;
@@ -407,7 +408,7 @@ main {
   align-items: center;
 }
 .header .header__container .header__list a {
-  color: #a3a2a2;
+  color: #ffffff;
 }
 .header .header__container .header__list a:hover {
   color: #ffd900;
@@ -428,4 +429,71 @@ main {
 }
 .header .header__container .header__list .button:hover {
   background: #ffffff;
+}
+
+.banner {
+  background: #0a0a0a;
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.banner .banner__container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.banner .banner__container .banner__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 50%;
+}
+.banner .banner__container .banner__text .banner__title {
+  font-size: 4.8rem;
+  font-weight: 900;
+  width: 80%;
+}
+.banner .banner__container .banner__text .banner__title span {
+  color: #ffd900;
+  font-style: italic;
+}
+.banner .banner__container .banner__text .banner__subtitle {
+  width: 80%;
+  color: #a3a2a2;
+}
+.banner .banner__container .banner__text .banner__text-cta {
+  display: flex;
+  gap: 2rem;
+}
+.banner .banner__container .banner__text .banner__text-cta a {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 900;
+  gap: 0.5rem;
+  display: flex;
+}
+.banner .banner__container .banner__text .banner__text-cta .banner__link--whatsApp {
+  background: #ffd900;
+  color: #0a0a0a;
+}
+.banner .banner__container .banner__text .banner__text-cta .banner__link--whatsAppPrimary {
+  border: solid 0.09rem #a3a2a2;
+  color: #ffffff;
+}
+.banner .banner__container .banner__text .banner__text-cta .banner__link--whatsAppPrimary i {
+  color: #ffd900;
+  font-weight: bold;
+}
+.banner .banner__container .banner__text .primary {
+  background: #ffd900;
+  color: #0a0a0a;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  height: 1.2rem;
+  width: 11rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-weight: 500;
 }/*# sourceMappingURL=main.css.map */
