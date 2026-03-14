@@ -496,4 +496,38 @@ main {
   justify-content: center;
   display: flex;
   font-weight: 500;
+}
+
+.differential {
+  display: flex;
+  justify-content: center;
+}
+.differential .differential__container {
+  width: 70%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.differential .differential__container .differential__title {
+  width: 50%;
+}
+.differential .differential__container .differential__title h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
+.differential .differential__container .differential__title h2 span {
+  background: #0a0a0a;
+  color: #ffd900;
+}
+.differential .differential__container .differential__itens li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.differential .differential__container .differential__itens li i {
+  font-size: 0.5rem;
+  color: #ffd900;
 }/*# sourceMappingURL=main.css.map */

@@ -140,3 +140,43 @@ main {
     }
   }
 }
+
+.differential {
+  display: flex;
+  justify-content: center;
+
+  .differential__container {
+    width: 70%;
+    height: 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .differential__title {
+      width: 50%;
+
+      h2 {
+        font-size: fonts.$font-2xl;
+        font-weight: fonts.$font-extra;
+        span {
+          background: color.$color-primary;
+          color: color.$color-secondary;
+        }
+      }
+    }
+
+    .differential__itens {
+      li {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        font-weight: fonts.$font-semibold;
+        i {
+          font-size: 0.5rem;
+          color: color.$color-secondary;
+        }
+      }
+    }
+  }
+}
