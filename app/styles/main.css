@@ -501,6 +501,8 @@ main {
 .differential {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 50rem;
 }
 .differential .differential__container {
   width: 70%;
@@ -533,6 +535,7 @@ main {
 }
 
 .technology {
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
