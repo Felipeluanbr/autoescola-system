@@ -450,3 +450,40 @@ main {
     }
   }
 }
+
+.informative {
+  display: flex;
+  justify-content: center;
+  background: color.$color-secondary;
+  padding: 5rem 0;
+  position: relative;
+
+  .informative__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    i {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: fonts.$font-2xl;
+      font-weight: fonts.$font-extra;
+      margin-bottom: 1rem;
+      span {
+        color: color.$color-secondary;
+        background: color.$color-primary;
+        text-align: center;
+      }
+    }
+
+    .informative__subtitle {
+      font-size: fonts.$font-xs;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+  }
+
+  
+}

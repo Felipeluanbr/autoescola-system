@@ -765,4 +765,36 @@ main {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px #ffd900;
   border-radius: 0.8rem;
+}
+
+.informative {
+  display: flex;
+  justify-content: center;
+  background: #ffd900;
+  padding: 5rem 0;
+  position: relative;
+}
+.informative .informative__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.informative .informative__container i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+.informative .informative__container h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.informative .informative__container h2 span {
+  color: #ffd900;
+  background: #0a0a0a;
+  text-align: center;
+}
+.informative .informative__container .informative__subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */
