@@ -698,4 +698,71 @@ main {
 .step .step__container .step__content .step__card p {
   font-size: 0.8rem;
   font-weight: 400;
+}
+
+.testimonials {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.testimonials .testimonials__container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+.testimonials .testimonials__container h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+.testimonials .testimonials__container h2 span {
+  color: #ffd900;
+  background: #0a0a0a;
+  text-align: center;
+}
+.testimonials .testimonials__container .testimonials__cards {
+  margin-top: 4rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card {
+  height: 12rem;
+  border-radius: 0.5rem;
+  display: block;
+  padding: 1.5rem;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__star {
+  color: #ffd900;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile {
+  position: absolute;
+  bottom: 2rem;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--cleint {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--category {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #a3a2a2;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__clients {
+  max-width: 100%;
+  margin: 0.8rem 0;
+  max-height: 100%;
+  color: #0a0a0a;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.testimonials .testimonials__container .testimonials__cards .testimonials__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px #ffd900;
+  border-radius: 0.8rem;
 }/*# sourceMappingURL=main.css.map */
