@@ -297,3 +297,81 @@ main {
     }
   }
 }
+
+.step {
+  display: flex;
+  justify-content: center;
+  background: color.$color-primary;
+  color: color.$color-text;
+  padding: 4rem 0;
+
+  .step__container {
+    width: 70%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .step__title {
+      font-size: fonts.$font-2xl;
+      font-weight: fonts.$font-extra;
+      color: color.$color-light;
+
+      span {
+        color: color.$color-secondary;
+        font-style: italic;
+      }
+    }
+
+    .step__content {
+      margin-top: 4rem;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    
+      align-items: center;
+      gap: 1.5rem;
+
+      .step__card {
+        border: solid 0.05px;
+        height: 15rem;
+        width: 15rem;
+        
+        border-radius: 0.5rem;
+        padding: 2rem 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        position: relative;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+         
+        span{
+          font-size: fonts.$font-mn;
+          position: absolute;
+          left: 0.8rem;
+          top: 1rem;
+        }
+        i{
+          font-size: 4rem;
+          color: color.$color-secondary;
+        }
+       
+        
+
+        h3 {
+          font-size: fonts.$font-md;
+          color: color.$color-secondary;
+        }
+        p {
+         
+          font-size: fonts.$font-mn;
+          font-weight: 400;
+        
+        }
+      }
+    }
+  }
+}
