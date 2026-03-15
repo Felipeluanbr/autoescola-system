@@ -15,7 +15,15 @@
       crossorigin="anonymous"
     ></script>
 
-    <link rel="stylesheet" href="/app/styles/main.css" />
+    <link rel="stylesheet" href="../../styles/main.css" />
+    <style>
+      .category {
+        display: none !important;
+      }
+      .category.category-active {
+        display: flex !important;
+      }
+    </style>
   </head>
   <body>
     <header class="header">
@@ -101,12 +109,12 @@
 
           <div class="technology__content">
             <div class="technology__buttons">
-              <button>CATEGORIA A</button>
-              <button>CATEGORIA B</button>
-              <button>CATEGORIA D/E</button>
+              <button class="category-btn category-a">CATEGORIA A</button>
+              <button class="category-btn  category-b">CATEGORIA B</button>
+              <button class="category-btn  category-d-e">CATEGORIA D/E</button>
             </div>
 
-            <div class="category technology__content--category-A">
+            <div id="category-a" class="category category-active technology__content--category-a">
               <div class="category__text">
                 <h3>Motos de Alta Performance</h3>
                 <p>
@@ -133,7 +141,7 @@
                 <img src="/app/assets/imags/technology-moto.png" alt="" />
               </div>
             </div>
-            <div class="category technology__content--category-B">
+            <div id="category-b" class="category technology__content--category-b">
               <div class="category__text">
                 <h3>Carros com Direção Hidráulica</h3>
                 <p>
@@ -160,7 +168,7 @@
                 <img src="/app/assets/imags/technology-carro.png" alt="" />
               </div>
             </div>
-            <div class="category technology__content--category-B">
+            <div id="category-d-e" class="category technology__content--category-d-e">
               <div class="category__text">
                 <h3>Caminhões e Ônibus Modernos</h3>
                 <p>
@@ -368,5 +376,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./landing.js"></script>
   </body>
 </html>

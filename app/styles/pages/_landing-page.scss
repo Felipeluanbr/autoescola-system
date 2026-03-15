@@ -225,19 +225,26 @@ main {
           color: color.$color-text;
           border-radius: 0.5rem;
           font-weight: fonts.$font-semibold;
+          cursor: pointer;
+          transition: all 0.3s ease;
         }
-        button:active {
+        button:hover {
+          background: #e5e7eb;
+        }
+        button.active {
           background: color.$color-secondary;
           color: color.$color-primary;
           box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
         }
       }
-      .category {
+
+      .category-active {
         display: flex;
+      }
+      .category {
+        display: none;
         align-items: center;
         width: 100%;
-
-        
 
         .category__text {
           width: 50%;
@@ -265,10 +272,9 @@ main {
               align-items: center;
               gap: 0.3rem;
               margin-top: 2rem;
-              i{
+              i {
                 color: color.$color-secondary;
               }
-
 
               p {
                 width: 10rem;

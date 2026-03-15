@@ -60,6 +60,24 @@ autoescola-system/
         ├── global.css           # Estilos globais
         ├── main.css             # Arquivo principal css
         ├── main.scss            # Arquivo principal scss
+
+
+
+##📌 Padrão de Commits
+
+| Tipo | Descrição |
+|-----     |-----------|
+| feat     | Nova funcionalidade |
+| fix      | Correção de bugs |
+| docs     | Mudanças na documentação |
+| style    | Ajustes de formatação ou CSS |
+| refactor | Refatoração de código |
+| perf     | Melhoria de performance |
+| test     | Adição ou modificação de testes |
+| build    | Mudanças no build ou dependências |
+| ci       | Alterações em CI/CD |
+| chore    | Tarefas de manutenção |
+| revert   | Reverter commit |
                  
 
 

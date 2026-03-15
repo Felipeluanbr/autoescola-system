@@ -573,14 +573,22 @@ main {
   color: #a3a2a2;
   border-radius: 0.5rem;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.technology .technology__container .technology__content .technology__buttons button:active {
+.technology .technology__container .technology__content .technology__buttons button:hover {
+  background: #e5e7eb;
+}
+.technology .technology__container .technology__content .technology__buttons button.active {
   background: #ffd900;
   color: #0a0a0a;
   box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
 }
-.technology .technology__container .technology__content .category {
+.technology .technology__container .technology__content .category-active {
   display: flex;
+}
+.technology .technology__container .technology__content .category {
+  display: none;
   align-items: center;
   width: 100%;
 }
