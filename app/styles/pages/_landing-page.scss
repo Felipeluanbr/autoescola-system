@@ -180,3 +180,111 @@ main {
     }
   }
 }
+
+.technology {
+  display: flex;
+  justify-content: center;
+
+  .technology__container {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .technology__title {
+      gap: 1rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 4rem;
+
+      h2 {
+        font-size: fonts.$font-2xl;
+        align-items: center;
+        font-weight: fonts.$font-extra;
+        span {
+          background: color.$color-primary;
+          color: color.$color-secondary;
+        }
+      }
+
+      p {
+        color: color.$color-text;
+      }
+    }
+
+    .technology__content {
+      .technology__buttons {
+        display: flex;
+        gap: 1rem;
+        button {
+          background: #f3f4f6;
+          border: none;
+          display: flex;
+          padding: 0.8rem 0.5rem;
+          color: color.$color-text;
+          border-radius: 0.5rem;
+          font-weight: fonts.$font-semibold;
+        }
+        button:active {
+          background: color.$color-secondary;
+          color: color.$color-primary;
+          box-shadow: 0.3rem 0.3rem 0.5rem rgba(0, 0, 0, 0.2);
+        }
+      }
+      .category {
+        display: flex;
+        align-items: center;
+        width: 100%;
+
+        
+
+        .category__text {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          h3 {
+            font-size: fonts.$font-lg;
+            font-weight: fonts.$font-extra;
+          }
+
+          p {
+            width: 70%;
+            color: color.$color-text;
+          }
+
+          .text__itens {
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            line-height: 0.1rem;
+
+            .text__item {
+              display: flex;
+              align-items: center;
+              gap: 0.3rem;
+              margin-top: 2rem;
+              i{
+                color: color.$color-secondary;
+              }
+
+
+              p {
+                width: 10rem;
+                color: color.$color-primary;
+              }
+            }
+          }
+        }
+
+        .category__img {
+          width: 50%;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
