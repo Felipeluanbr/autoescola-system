@@ -527,14 +527,33 @@ main {
         color: color.$color-primary;
         font-weight: 800;
 
+        .accordion {
+          transition: transform 0.3s;
+        }
+
         i {
           position: absolute;
           right: 0;
+          transition: transform 0.3s;
+        }
+
+        &.activeButtonAcordion i {
+          transform: rotate(180deg);
+          color: color.$color-secondary;
+          
         }
       }
 
-      .panel p{
+      .panel {
         color: color.$color-text;
+
+        max-height: 6rem;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      .activeAcordion {
+        max-height: 0;
       }
     }
   }
