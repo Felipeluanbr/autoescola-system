@@ -540,7 +540,6 @@ main {
         &.activeButtonAcordion i {
           transform: rotate(180deg);
           color: color.$color-secondary;
-          
         }
       }
 
@@ -555,6 +554,75 @@ main {
       .activeAcordion {
         max-height: 0;
       }
+    }
+  }
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  background: color.$color-primary;
+  .cta__container {
+    width: 60%;
+    height: 24rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    p {
+      color: color.$color-text;
+    }
+
+    h2 {
+      font-size: fonts.$font-2xl;
+      font-weight: fonts.$font-extra;
+      margin-bottom: 1rem;
+      color: color.$color-light;
+      width: 25rem;
+      text-align: center;
+
+      span {
+        color: color.$color-secondary;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+    a {
+      display: flex;
+      width: 60%;
+      height: 3rem;
+      border-radius: 0.5rem;
+      justify-content: center;
+      align-items: center;
+
+      background: color.$color-secondary;
+      div {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        img {
+          height: 1.5rem;
+        }
+      }
+
+      p {
+        color: color.$color-primary;
+        font-weight: fonts.$font-extra;
+      }
+    }
+    a:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 16px 28px rgba(255, 217, 5, 0.15),
+        0 0 0 1px color.$color-secondary;
+      border-radius: 0.8rem;
+    }
+
+    .cta__localization {
+      font-size: fonts.$font-mn;
     }
   }
 }
