@@ -797,4 +797,51 @@ main {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 1rem;
+}
+
+.doubts {
+  margin-top: 10rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.doubts .doubts__container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doubts .doubts__container h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.doubts .doubts__container h2 span {
+  color: #ffd900;
+  background: #0a0a0a;
+  text-align: center;
+}
+.doubts .doubts__container .doubts__subtittle {
+  color: #a3a2a2;
+}
+.doubts .doubts__container .doubts__accordions {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+.doubts .doubts__container .doubts__accordions button {
+  background: none;
+  border: none;
+  position: relative;
+  color: #0a0a0a;
+  font-weight: 800;
+}
+.doubts .doubts__container .doubts__accordions button i {
+  position: absolute;
+  right: 0;
+}
+.doubts .doubts__container .doubts__accordions .panel p {
+  color: #a3a2a2;
 }/*# sourceMappingURL=main.css.map */

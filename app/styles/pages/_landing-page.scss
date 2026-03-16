@@ -484,6 +484,58 @@ main {
       margin-bottom: 1rem;
     }
   }
+}
 
-  
+.doubts {
+  margin-top: 10rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  .doubts__container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-size: fonts.$font-2xl;
+      font-weight: fonts.$font-extra;
+      margin-bottom: 1rem;
+
+      span {
+        color: color.$color-secondary;
+        background: color.$color-primary;
+        text-align: center;
+      }
+    }
+
+    .doubts__subtittle {
+      color: color.$color-text;
+    }
+
+    .doubts__accordions {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      margin-top: 4rem;
+      gap: 2rem;
+
+      button {
+        background: none;
+        border: none;
+        position: relative;
+        color: color.$color-primary;
+        font-weight: 800;
+
+        i {
+          position: absolute;
+          right: 0;
+        }
+      }
+
+      .panel p{
+        color: color.$color-text;
+      }
+    }
+  }
 }
