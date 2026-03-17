@@ -645,18 +645,15 @@ main {
     bottom: 10rem;
 
     .footer__business {
+      width: 50%;
       display: flex;
       gap: 2rem;
       flex-direction: column;
+      align-items: flex-start;
 
       img {
         height: 1.5rem;
-       
       }
-    }
-
-    .footer__business {
-      width: 50%;
     }
 
     .footer__informations {

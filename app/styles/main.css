@@ -938,15 +938,14 @@ main {
   bottom: 10rem;
 }
 .footer .footer__container .footer__business {
+  width: 50%;
   display: flex;
   gap: 2rem;
   flex-direction: column;
+  align-items: flex-start;
 }
 .footer .footer__container .footer__business img {
   height: 1.5rem;
-}
-.footer .footer__container .footer__business {
-  width: 50%;
 }
 .footer .footer__container .footer__informations {
   display: flex;
