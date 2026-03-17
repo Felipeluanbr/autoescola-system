@@ -78,6 +78,10 @@ main {
     display: flex;
     align-items: center;
 
+    .banner__image img {
+      width: 35rem;
+    }
+
     .banner__text {
       display: flex;
       flex-direction: column;
@@ -88,6 +92,7 @@ main {
         font-size: fonts.$font-4xl;
         font-weight: fonts.$font-extra;
         width: 80%;
+        color: color.$color-primary;
         span {
           color: color.$color-secondary;
           font-style: italic;
@@ -96,7 +101,7 @@ main {
 
       .banner__subtitle {
         width: 80%;
-        color: color.$color-text;
+        color: color.$color-primary;
       }
 
       .banner__text-cta {
@@ -116,10 +121,10 @@ main {
         }
 
         .banner__link--whatsAppPrimary {
-          border: solid 0.09rem color.$color-text;
-          color: color.$color-light;
+          border: solid 0.09rem color.$color-primary;
+          color: color.$color-primary;
           i {
-            color: color.$color-secondary;
+            color: color.$color-primary;
             font-weight: bold;
           }
         }
@@ -301,7 +306,7 @@ main {
 .step {
   display: flex;
   justify-content: center;
-  background: color.$color-primary;
+  // background: color.$color-primary;
   color: color.$color-text;
   padding: 4rem 0;
 
@@ -315,11 +320,13 @@ main {
     .step__title {
       font-size: fonts.$font-2xl;
       font-weight: fonts.$font-extra;
-      color: color.$color-light;
+      color: color.$color-primary;
+      margin-bottom: 1rem;
 
       span {
         color: color.$color-secondary;
         font-style: italic;
+        background: color.$color-primary;
       }
     }
 
@@ -333,20 +340,21 @@ main {
       gap: 1.5rem;
 
       .step__card {
-        border: solid 0.05px;
+        // border: solid 0.05px;
         height: 15rem;
         width: 15rem;
+        
 
         border-radius: 0.5rem;
         padding: 2rem 1rem;
-        align-items: center;
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
         font-weight: 700;
         position: relative;
-        justify-content: center;
+        // justify-content: center;
         gap: 1rem;
-        text-align: center;
+        text-align: left;
 
         span {
           font-size: fonts.$font-mn;
@@ -354,19 +362,44 @@ main {
           left: 0.8rem;
           top: 1rem;
         }
+
+        .step__icone {
+          background-color: color.$color-secondary;
+          height: 4rem;
+          width: 4rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 1rem;
+          margin-top: 2rem;
+        }
         i {
-          font-size: 4rem;
-          color: color.$color-secondary;
+          font-size: 3rem;
+          color: color.$color-primary;
         }
 
         h3 {
           font-size: fonts.$font-md;
-          color: color.$color-secondary;
+          color: color.$color-primary;
         }
         p {
           font-size: fonts.$font-mn;
           font-weight: 400;
         }
+      }
+      .step__card:hover {
+        h3{
+          color: color.$color-secondary;
+        }
+        transform: translateY(-8px);
+        // box-shadow:
+        //   0 12px 24px rgba(0, 0, 0, 0.15),
+        //   0 0 0 1px color.$color-secondary;
+         box-shadow:
+        0 16px 28px rgba(255, 217, 5, 0.15),
+        0 0 0 1px color.$color-secondary;
+        border-radius: 0.8rem;
+      
       }
     }
   }

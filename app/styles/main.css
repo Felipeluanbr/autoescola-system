@@ -442,6 +442,9 @@ main {
   display: flex;
   align-items: center;
 }
+.banner .banner__container .banner__image img {
+  width: 35rem;
+}
 .banner .banner__container .banner__text {
   display: flex;
   flex-direction: column;
@@ -452,6 +455,7 @@ main {
   font-size: 4.8rem;
   font-weight: 900;
   width: 80%;
+  color: #0a0a0a;
 }
 .banner .banner__container .banner__text .banner__title span {
   color: #ffd900;
@@ -459,7 +463,7 @@ main {
 }
 .banner .banner__container .banner__text .banner__subtitle {
   width: 80%;
-  color: #a3a2a2;
+  color: #0a0a0a;
 }
 .banner .banner__container .banner__text .banner__text-cta {
   display: flex;
@@ -477,11 +481,11 @@ main {
   color: #0a0a0a;
 }
 .banner .banner__container .banner__text .banner__text-cta .banner__link--whatsAppPrimary {
-  border: solid 0.09rem #a3a2a2;
-  color: #ffffff;
+  border: solid 0.09rem #0a0a0a;
+  color: #0a0a0a;
 }
 .banner .banner__container .banner__text .banner__text-cta .banner__link--whatsAppPrimary i {
-  color: #ffd900;
+  color: #0a0a0a;
   font-weight: bold;
 }
 .banner .banner__container .banner__text .primary {
@@ -561,7 +565,7 @@ main {
   color: #ffd900;
 }
 .technology .technology__container .technology__title p {
-  color: #a3a2a2;
+  color: #4c5663;
 }
 .technology .technology__container .technology__content .technology__buttons {
   display: flex;
@@ -572,7 +576,7 @@ main {
   border: none;
   display: flex;
   padding: 0.8rem 0.5rem;
-  color: #a3a2a2;
+  color: #4c5663;
   border-radius: 0.5rem;
   font-weight: 600;
   cursor: pointer;
@@ -606,7 +610,7 @@ main {
 }
 .technology .technology__container .technology__content .category .category__text p {
   width: 70%;
-  color: #a3a2a2;
+  color: #4c5663;
 }
 .technology .technology__container .technology__content .category .category__text .text__itens {
   display: flex;
@@ -637,8 +641,7 @@ main {
 .step {
   display: flex;
   justify-content: center;
-  background: #0a0a0a;
-  color: #a3a2a2;
+  color: #4c5663;
   padding: 4rem 0;
 }
 .step .step__container {
@@ -651,11 +654,13 @@ main {
 .step .step__container .step__title {
   font-size: 3.2rem;
   font-weight: 900;
-  color: #ffffff;
+  color: #0a0a0a;
+  margin-bottom: 1rem;
 }
 .step .step__container .step__title span {
   color: #ffd900;
   font-style: italic;
+  background: #0a0a0a;
 }
 .step .step__container .step__content {
   margin-top: 4rem;
@@ -666,19 +671,17 @@ main {
   gap: 1.5rem;
 }
 .step .step__container .step__content .step__card {
-  border: solid 0.05px;
   height: 15rem;
   width: 15rem;
   border-radius: 0.5rem;
   padding: 2rem 1rem;
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   font-weight: 700;
   position: relative;
-  justify-content: center;
   gap: 1rem;
-  text-align: center;
+  text-align: left;
 }
 .step .step__container .step__content .step__card span {
   font-size: 0.8rem;
@@ -686,17 +689,35 @@ main {
   left: 0.8rem;
   top: 1rem;
 }
+.step .step__container .step__content .step__card .step__icone {
+  background-color: #ffd900;
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
 .step .step__container .step__content .step__card i {
-  font-size: 4rem;
-  color: #ffd900;
+  font-size: 3rem;
+  color: #0a0a0a;
 }
 .step .step__container .step__content .step__card h3 {
   font-size: 1.6rem;
-  color: #ffd900;
+  color: #0a0a0a;
 }
 .step .step__container .step__content .step__card p {
   font-size: 0.8rem;
   font-weight: 400;
+}
+.step .step__container .step__content .step__card:hover h3 {
+  color: #ffd900;
+}
+.step .step__container .step__content .step__card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 28px rgba(255, 217, 5, 0.15), 0 0 0 1px #ffd900;
+  border-radius: 0.8rem;
 }
 
 .testimonials {
@@ -750,7 +771,7 @@ main {
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--category {
   font-size: 0.8rem;
   margin-top: 0.5rem;
-  color: #a3a2a2;
+  color: #4c5663;
 }
 .testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__clients {
   max-width: 100%;
@@ -821,7 +842,7 @@ main {
   text-align: center;
 }
 .doubts .doubts__container .doubts__subtittle {
-  color: #a3a2a2;
+  color: #4c5663;
 }
 .doubts .doubts__container .doubts__accordions {
   width: 60%;
@@ -850,7 +871,7 @@ main {
   color: #ffd900;
 }
 .doubts .doubts__container .doubts__accordions .panel {
-  color: #a3a2a2;
+  color: #4c5663;
   max-height: 6rem;
   overflow: hidden;
   transition: 0.5s;
@@ -875,7 +896,7 @@ main {
   gap: 1.5rem;
 }
 .cta .cta__container p {
-  color: #a3a2a2;
+  color: #4c5663;
 }
 .cta .cta__container h2 {
   font-size: 3.2rem;
@@ -923,7 +944,7 @@ main {
 
 .footer {
   background: #0a0a0a;
-  color: #a3a2a2;
+  color: #4c5663;
   display: flex;
   justify-content: center;
   height: 50vh;
