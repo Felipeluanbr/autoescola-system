@@ -344,7 +344,6 @@ main {
         // border: solid 0.05px;
         height: 15rem;
         width: 15rem;
-        
 
         border-radius: 0.5rem;
         padding: 2rem 1rem;
@@ -391,18 +390,17 @@ main {
         }
       }
       .step__card:hover {
-        h3{
+        h3 {
           color: color.$color-secondary;
         }
         transform: translateY(-8px);
         // box-shadow:
         //   0 12px 24px rgba(0, 0, 0, 0.15),
         //   0 0 0 1px color.$color-secondary;
-         box-shadow:
-        0 16px 28px rgba(255, 217, 5, 0.15),
-        0 0 0 1px color.$color-secondary;
+        box-shadow:
+          0 16px 28px rgba(255, 217, 5, 0.15),
+          0 0 0 1px color.$color-secondary;
         border-radius: 0.8rem;
-      
       }
     }
   }
@@ -523,8 +521,8 @@ main {
 }
 
 .doubts {
-  margin-top: 10rem;
-  height: 100vh;
+  margin: 10rem 0;
+
   display: flex;
   justify-content: center;
   .doubts__container {
@@ -554,43 +552,59 @@ main {
       display: flex;
       flex-direction: column;
       margin-top: 4rem;
-      gap: 2rem;
+      gap: 1.5rem;
 
-      button {
-        background: none;
-        border: none;
-        position: relative;
-        color: color.$color-primary;
-        font-weight: 800;
-
-        .accordion {
-          transition: transform 0.3s;
-        
-        }
-
-        i {
-          position: absolute;
-          right: 0;
-          transition: transform 0.3s;
-        }
-
-        &.activeButtonAcordion i {
-          transform: rotate(180deg);
-          color: color.$color-secondary;
-        }
-      }
-
-      .panel {
-        color: color.$color-text;
-
-        max-height: 6rem;
+      .doubts__item {
+        border: 1px solid #e5e7eb;
+        border-radius: 0.8rem;
         overflow: hidden;
-        transition: 0.5s;
+        background-color: color.$color-light;
+        transition: all 0.3s ease;
+
+        &:hover {
+          border-color: color.$color-secondary;
+        }
+
+        .doubts__trigger {
+          width: 100%;
+          background: none;
+          border: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1.5rem 2rem;
+          cursor: pointer;
+          font-size: fonts.$font-xs;
+          font-weight: fonts.$font-bold;
+          color: color.$color-primary;
+          text-align: left;
+
+          i {
+            font-size: 1.2rem;
+            transition: transform 0.4s ease;
+            color: color.$color-secondary;
+          }
+
+          &.active i {
+            transform: rotate(180deg);
+          }
+        }
+
+        .doubts__content {
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.4s ease-out;
+          background-color: #f9fafb;
+
+          p {
+            padding: 0 2rem 2rem 2rem;
+            color: color.$color-text;
+            line-height: 1.6;
+            font-size: fonts.$font-mn;
+          }
+        }
       }
 
-      .activeAcordion {
-        max-height: 0;
-      }
     }
   }
 }
@@ -670,7 +684,7 @@ main {
           font-weight: fonts.$font-bold;
           font-size: fonts.$font-mn;
           white-space: nowrap;
-          box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         .pricing__header {
@@ -689,8 +703,7 @@ main {
         .pricing__price {
           display: flex;
           flex-direction: column;
-          
-          
+
           .currency {
             font-size: fonts.$font-sm;
             font-weight: fonts.$font-bold;
@@ -715,7 +728,7 @@ main {
             margin-bottom: 0.2rem;
             font-size: fonts.$font-mn;
             color: color.$color-text;
-            
+
             i {
               color: color.$color-secondary;
               font-size: 1.2rem;
@@ -753,7 +766,7 @@ main {
 
           &--featured {
             background: color.$color-secondary;
-            
+
             &:hover {
               background: color.$color-primary;
               color: color.$color-light;

@@ -48,15 +48,39 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const buttonAcordion = document.querySelectorAll(".accordion");
-const cardPanel = document.querySelectorAll(".panel");
+// Selecionar todos os botões que disparam o accordion
+const accordionTriggers = document.querySelectorAll(".doubts__trigger");
 
-buttonAcordion.forEach((button) => {
+// Adicionar um ouvinte de evento para cada botão encontrado
+accordionTriggers.forEach((button) => {
+  // Adicionar o evento de clique ao botão atual do loop
   button.addEventListener("click", () => {
-    const panel = button.nextElementSibling;
+    // Identificar o elemento de conteúdo imediatamente após o botão clicado
+    const content = button.nextElementSibling;
 
-    panel.classList.toggle("activeAcordion");
+    // Verificar se o botão clicado já possui a classe 'active' (está aberto)
+    const isActive = button.classList.contains("active");
 
-    button.classList.toggle("activeButtonAcordion")
+    // Iterar sobre todos os botões novamente para fechar os outros
+    accordionTriggers.forEach((otherButton) => {
+      // Remover a classe 'active' de todos os botões para resetar o estado visual
+      otherButton.classList.remove("active");
+      // Definir a altura máxima do conteúdo de todos os itens como null (fechar)
+      otherButton.nextElementSibling.style.maxHeight = null;
+    });
+
+    // Se o item clicado NÃO estava ativo anteriormente, vamos abri-lo
+    if (!isActive) {
+      // Adicionar a classe 'active' ao botão clicado para girar a seta
+      button.classList.add("active");
+      // Definir a altura máxima do conteúdo igual à sua altura total de rolagem (scrollHeight)
+      // Isso permite a animação CSS de transição funcionar corretamente
+      content.style.maxHeight = content.scrollHeight + "px";
+    } else {
+      // Se já estava ativo, removemos a classe 'active' (fechamos)
+      button.classList.remove("active");
+      // Zeramos a altura máxima para colapsar o conteúdo
+      content.style.maxHeight = null;
+    }
   });
 });
