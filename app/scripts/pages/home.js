@@ -1,3 +1,8 @@
+import { loadComponents } from "../utilits/loadComponent";  
+loadComponents ('header', '../../components/header.html')
+
+
+
 // Aguardar que o DOM esteja totalmente carregado
 document.addEventListener("DOMContentLoaded", () => {
   // pegar todos os botões
