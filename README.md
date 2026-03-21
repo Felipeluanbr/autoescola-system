@@ -38,19 +38,16 @@ autoescola-system/
     │   └── images/              # Imagens e ícones
     │
     ├── pages/
-    │   ├── landing-page/
-    │   │   ├── landing-page.html
-    │   │   ├── landing-page.css
-    │   │   └── landing-page.js
+    │   ├── home/home.html
     │   │
     │   ├── car-registration/        # Cadastro de veículos
     │   ├── instructor-registration/ # Cadastro de instrutores
     │   └── student-registration/    # Cadastro de alunos
     │
     ├── scripts/
-    │   ├── commons/             # Funções reutilizáveis
-    │   ├── services/            # Regras de negócio / API calls
-    │   └── vendor/              # Scripts externos
+    │   ├── pages/home.js
+    │   ├── 
+    │   └── 
     │
     └── styles/
         ├── components/          # Botões, cards, inputs, etc.

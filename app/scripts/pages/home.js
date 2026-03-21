@@ -1,6 +1,6 @@
-import { loadComponents } from "../utilits/loadComponent";  
-loadComponents ('header', '../../components/header.html')
-
+import { loadComponents } from '../utilts/loadComponent.js'
+loadComponents("header", "../../components/header.html");
+loadComponents("footer", "../../components/footer.html");
 
 
 // Aguardar que o DOM esteja totalmente carregado
@@ -17,11 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   buttons.forEach((button, idx) => {
-    console.log(`Botão ${idx}:`, {
-      classes: button.className,
-      classesList: Array.from(button.classList),
-    });
-
     button.addEventListener("click", (e) => {
       e.preventDefault();
 
@@ -47,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       // ativar o card
       if (target) {
         target.classList.add("category-active");
-      } else {
       }
     });
   });
