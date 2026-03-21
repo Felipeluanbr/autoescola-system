@@ -1133,4 +1133,87 @@ main h2 {
 .footer .footer__container .footer__informations h3 {
   color: #ffd900;
   margin-bottom: 1rem;
+}
+
+.footer {
+  background: #0a0a0a;
+  color: #4c5663;
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  align-items: last baseline;
+  position: relative;
+}
+.footer .footer__container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10rem;
+}
+.footer .footer__container .footer__business {
+  width: 50%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer .footer__container .footer__business img {
+  height: 1.5rem;
+}
+.footer .footer__container .footer__informations {
+  display: flex;
+  gap: 4rem;
+}
+.footer .footer__container .footer__informations h3 {
+  color: #ffd900;
+  margin-bottom: 1rem;
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.93);
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+.header .header__container {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__logo img {
+  height: 1rem;
+}
+.header .header__list {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+.header .header__list a {
+  color: #ffffff;
+}
+.header .header__list a:hover {
+  color: #ffd900;
+}
+.header .header__container .button {
+  background: #ffd900;
+  height: 1.5rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header .header__container .button a {
+  color: #0a0a0a;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.header .header__container .button:hover {
+  background: #ffffff;
 }/*# sourceMappingURL=main.css.map */

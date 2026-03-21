@@ -1,0 +1,60 @@
+@use "../variables/fonts";
+@use "../variables/color";
+@use "../variables/spacing";
+
+
+.header {
+  background-color: rgba(0, 0, 0, 0.93);
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  .header__container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__logo img {
+    height: 1rem;
+  }
+
+  .header__list {
+    display: flex;
+    gap: spacing.$space-md;
+    align-items: center;
+  }
+
+  .header__list a {
+    color: color.$color-light;
+  }
+
+  .header__list a:hover {
+    color: color.$color-secondary;
+  }
+
+  .header__container .button {
+    background: color.$color-secondary;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: color.$color-primary;
+      font-weight: fonts.$font-semibold;
+      font-size: 0.9rem;
+    }
+  }
+
+  .header__container .button:hover {
+    background: color.$color-light;
+  }
+}
