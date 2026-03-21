@@ -11,6 +11,10 @@ body {
 }
 main {
   margin-top: 4rem;
+  h2 {
+    font-size: fonts.$font-2xl;
+    font-weight: fonts.$font-extra;
+  }
 }
 
 .header {
@@ -28,48 +32,49 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    .header__logo img {
-      height: 1rem;
+  .header__logo img {
+    height: 1rem;
+  }
+
+  .header__list {
+    display: flex;
+    gap: spacing.$space-md;
+    align-items: center;
+  }
+
+  .header__list a {
+    color: color.$color-light;
+  }
+
+  .header__list a:hover {
+    color: color.$color-secondary;
+  }
+
+  .header__container .button {
+    background: color.$color-secondary;
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 0.5rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    a {
+      color: color.$color-primary;
+      font-weight: fonts.$font-semibold;
+      font-size: 0.9rem;
     }
+  }
 
-    .header__list {
-      display: flex;
-      gap: spacing.$space-md;
-      align-items: center;
-
-      a {
-        color: color.$color-light;
-      }
-      a:hover {
-        color: color.$color-secondary;
-      }
-
-      .button {
-        background: color.$color-secondary;
-        height: 1.5rem;
-        width: 5rem;
-        border-radius: 0.5rem;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-
-        a {
-          color: color.$color-primary;
-          font-weight: fonts.$font-semibold;
-          font-size: 0.9rem;
-        }
-      }
-      .button:hover {
-        background: color.$color-light;
-      }
-    }
+  .header__container .button:hover {
+    background: color.$color-light;
   }
 }
 
 .banner {
-  // background: color.$color-primary;
-  height: 100vh;
+  padding: 6rem 0;
   color: color.$color-light;
   display: flex;
   justify-content: center;
@@ -190,7 +195,7 @@ main {
 }
 
 .technology {
-  height: 100vh;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
 
@@ -207,14 +212,9 @@ main {
       flex-direction: column;
       margin-bottom: 4rem;
 
-      h2 {
-        font-size: fonts.$font-2xl;
-        align-items: center;
-        font-weight: fonts.$font-extra;
-        span {
-          background: color.$color-primary;
-          color: color.$color-secondary;
-        }
+      h2 span {
+        background: color.$color-primary;
+        color: color.$color-secondary;
       }
 
       p {
@@ -307,8 +307,6 @@ main {
 .step {
   display: flex;
   justify-content: center;
-  // background: color.$color-primary;
-  color: color.$color-text;
   padding: 4rem 0;
 
   .step__container {
@@ -317,97 +315,96 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
 
-    .step__title {
-      font-size: fonts.$font-2xl;
-      font-weight: fonts.$font-extra;
-      color: color.$color-primary;
-      margin-bottom: 1rem;
+  .step__title span {
+    color: color.$color-secondary;
+    font-style: italic;
+    background: color.$color-primary;
+  }
+
+  .step__sutitle {
+    color: color.$color-text;
+    margin-top: 1rem;
+  }
+
+  .step__content {
+    margin-top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    gap: 1.5rem;
+
+    .step__card {
+      // border: solid 0.05px;
+      height: 15rem;
+      width: 15rem;
+
+      border-radius: 0.5rem;
+      padding: 2rem 1rem;
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      font-weight: 700;
+      position: relative;
+      // justify-content: center;
+      gap: 1rem;
+      text-align: left;
 
       span {
-        color: color.$color-secondary;
-        font-style: italic;
-        background: color.$color-primary;
+        font-size: fonts.$font-mn;
+        position: absolute;
+        left: 0.8rem;
+        top: 1rem;
+      }
+
+      .step__icone {
+        background-color: color.$color-secondary;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1rem;
+        margin-top: 2rem;
+      }
+      i {
+        font-size: 3rem;
+        color: color.$color-primary;
+      }
+
+      h3 {
+        font-size: fonts.$font-md;
+        color: color.$color-primary;
+      }
+      p {
+        font-size: fonts.$font-mn;
+        font-weight: 400;
+        position: absolute;
+        bottom: 2rem;
       }
     }
-
-    .step__content {
-      margin-top: 4rem;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      align-items: center;
-      gap: 1.5rem;
-
-      .step__card {
-        // border: solid 0.05px;
-        height: 15rem;
-        width: 15rem;
-
-        border-radius: 0.5rem;
-        padding: 2rem 1rem;
-        align-items: flex-start;
-        display: flex;
-        flex-direction: column;
-        font-weight: 700;
-        position: relative;
-        // justify-content: center;
-        gap: 1rem;
-        text-align: left;
-
-        span {
-          font-size: fonts.$font-mn;
-          position: absolute;
-          left: 0.8rem;
-          top: 1rem;
-        }
-
-        .step__icone {
-          background-color: color.$color-secondary;
-          height: 4rem;
-          width: 4rem;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 1rem;
-          margin-top: 2rem;
-        }
-        i {
-          font-size: 3rem;
-          color: color.$color-primary;
-        }
-
-        h3 {
-          font-size: fonts.$font-md;
-          color: color.$color-primary;
-        }
-        p {
-          font-size: fonts.$font-mn;
-          font-weight: 400;
-          position: absolute;
-          bottom: 2rem;
-        }
+    .step__card:hover {
+      h3 {
+        color: color.$color-secondary;
       }
-      .step__card:hover {
-        h3 {
-          color: color.$color-secondary;
-        }
-        transform: translateY(-8px);
-        // box-shadow:
-        //   0 12px 24px rgba(0, 0, 0, 0.15),
-        //   0 0 0 1px color.$color-secondary;
-        box-shadow:
-          0 16px 28px rgba(255, 217, 5, 0.15),
-          0 0 0 1px color.$color-secondary;
-        border-radius: 0.8rem;
-      }
+      transform: translateY(-8px);
+      // box-shadow:
+      //   0 12px 24px rgba(0, 0, 0, 0.15),
+      //   0 0 0 1px color.$color-secondary;
+      box-shadow:
+        0 16px 28px rgba(255, 217, 5, 0.15),
+        0 0 0 1px color.$color-secondary;
+      border-radius: 0.8rem;
     }
   }
 }
 
 .testimonials {
-  height: 100vh;
+  // height: 100vh;
+  margin: 5rem 0;
   display: flex;
   justify-content: center;
 
@@ -418,69 +415,68 @@ main {
     flex-direction: column;
     margin-top: 4rem;
 
-    h2 {
-      font-size: fonts.$font-2xl;
-      font-weight: fonts.$font-extra;
-      margin-bottom: 2rem;
-      span {
+    h2 span {
+      color: color.$color-secondary;
+      background: color.$color-primary;
+      text-align: center;
+    }
+  }
+
+  .testimonials__subtitle {
+    margin-top: 1rem;
+  }
+
+  .testimonials__cards {
+    margin-top: 4rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    .testimonials__card {
+      height: 12rem;
+      border-radius: 0.5rem;
+      display: block;
+      padding: 1.5rem;
+      position: relative;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+      .testimonials__star {
         color: color.$color-secondary;
-        background: color.$color-primary;
-        text-align: center;
+      }
+
+      .testimonials__profile {
+        position: absolute;
+        bottom: 2rem;
+
+        .testimonials__profile--cleint {
+          font-size: fonts.$font-xs;
+          font-weight: fonts.$font-bold;
+        }
+
+        .testimonials__profile--category {
+          font-size: fonts.$font-mn;
+          margin-top: 0.5rem;
+          color: color.$color-text;
+        }
+      }
+
+      .testimonials__clients {
+        max-width: 100%;
+        margin: 0.8rem 0;
+        max-height: 100%;
+        color: color.$color-primary;
+        font-size: fonts.$font-xs;
+        font-weight: 400;
       }
     }
 
-    .testimonials__cards {
-      margin-top: 4rem;
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2rem;
-
-      .testimonials__card {
-        height: 12rem;
-        border-radius: 0.5rem;
-        display: block;
-        padding: 1.5rem;
-        position: relative;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-
-        .testimonials__star {
-          color: color.$color-secondary;
-        }
-
-        .testimonials__profile {
-          position: absolute;
-          bottom: 2rem;
-
-          .testimonials__profile--cleint {
-            font-size: fonts.$font-xs;
-            font-weight: fonts.$font-bold;
-          }
-
-          .testimonials__profile--category {
-            font-size: fonts.$font-mn;
-            margin-top: 0.5rem;
-            color: color.$color-text;
-          }
-        }
-
-        .testimonials__clients {
-          max-width: 100%;
-          margin: 0.8rem 0;
-          max-height: 100%;
-          color: color.$color-primary;
-          font-size: fonts.$font-xs;
-          font-weight: 400;
-        }
-      }
-
-      .testimonials__card:hover {
-        transform: translateY(-8px);
-        box-shadow:
-          0 12px 24px rgba(0, 0, 0, 0.15),
-          0 0 0 1px color.$color-secondary;
-        border-radius: 0.8rem;
-      }
+    .testimonials__card:hover {
+      transform: translateY(-8px);
+      box-shadow:
+        0 12px 24px rgba(0, 0, 0, 0.15),
+        0 0 0 1px color.$color-secondary;
+      border-radius: 0.8rem;
     }
   }
 }
@@ -604,14 +600,13 @@ main {
           }
         }
       }
-
     }
   }
 }
 
 .pricing {
   height: 100vh;
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
 

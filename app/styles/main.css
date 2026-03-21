@@ -383,6 +383,10 @@ body a {
 main {
   margin-top: 4rem;
 }
+main h2 {
+  font-size: 3.2rem;
+  font-weight: 900;
+}
 
 .header {
   background-color: rgba(0, 0, 0, 0.93);
@@ -400,21 +404,21 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.header .header__container .header__logo img {
+.header .header__logo img {
   height: 1rem;
 }
-.header .header__container .header__list {
+.header .header__list {
   display: flex;
   gap: 1.6rem;
   align-items: center;
 }
-.header .header__container .header__list a {
+.header .header__list a {
   color: #ffffff;
 }
-.header .header__container .header__list a:hover {
+.header .header__list a:hover {
   color: #ffd900;
 }
-.header .header__container .header__list .button {
+.header .header__container .button {
   background: #ffd900;
   height: 1.5rem;
   width: 5rem;
@@ -423,17 +427,17 @@ main {
   display: flex;
   justify-content: center;
 }
-.header .header__container .header__list .button a {
+.header .header__container .button a {
   color: #0a0a0a;
   font-weight: 600;
   font-size: 0.9rem;
 }
-.header .header__container .header__list .button:hover {
+.header .header__container .button:hover {
   background: #ffffff;
 }
 
 .banner {
-  height: 100vh;
+  padding: 6rem 0;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -539,7 +543,7 @@ main {
 }
 
 .technology {
-  height: 100vh;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
 }
@@ -555,11 +559,6 @@ main {
   align-items: center;
   flex-direction: column;
   margin-bottom: 4rem;
-}
-.technology .technology__container .technology__title h2 {
-  font-size: 3.2rem;
-  align-items: center;
-  font-weight: 900;
 }
 .technology .technology__container .technology__title h2 span {
   background: #0a0a0a;
@@ -642,7 +641,6 @@ main {
 .step {
   display: flex;
   justify-content: center;
-  color: #4c5663;
   padding: 4rem 0;
 }
 .step .step__container {
@@ -652,18 +650,16 @@ main {
   flex-direction: column;
   justify-content: center;
 }
-.step .step__container .step__title {
-  font-size: 3.2rem;
-  font-weight: 900;
-  color: #0a0a0a;
-  margin-bottom: 1rem;
-}
-.step .step__container .step__title span {
+.step .step__title span {
   color: #ffd900;
   font-style: italic;
   background: #0a0a0a;
 }
-.step .step__container .step__content {
+.step .step__sutitle {
+  color: #4c5663;
+  margin-top: 1rem;
+}
+.step .step__content {
   margin-top: 4rem;
   width: 100%;
   display: flex;
@@ -671,7 +667,7 @@ main {
   align-items: center;
   gap: 1.5rem;
 }
-.step .step__container .step__content .step__card {
+.step .step__content .step__card {
   height: 15rem;
   width: 15rem;
   border-radius: 0.5rem;
@@ -684,13 +680,13 @@ main {
   gap: 1rem;
   text-align: left;
 }
-.step .step__container .step__content .step__card span {
+.step .step__content .step__card span {
   font-size: 0.8rem;
   position: absolute;
   left: 0.8rem;
   top: 1rem;
 }
-.step .step__container .step__content .step__card .step__icone {
+.step .step__content .step__card .step__icone {
   background-color: #ffd900;
   height: 4rem;
   width: 4rem;
@@ -700,31 +696,31 @@ main {
   border-radius: 1rem;
   margin-top: 2rem;
 }
-.step .step__container .step__content .step__card i {
+.step .step__content .step__card i {
   font-size: 3rem;
   color: #0a0a0a;
 }
-.step .step__container .step__content .step__card h3 {
+.step .step__content .step__card h3 {
   font-size: 1.6rem;
   color: #0a0a0a;
 }
-.step .step__container .step__content .step__card p {
+.step .step__content .step__card p {
   font-size: 0.8rem;
   font-weight: 400;
   position: absolute;
   bottom: 2rem;
 }
-.step .step__container .step__content .step__card:hover h3 {
+.step .step__content .step__card:hover h3 {
   color: #ffd900;
 }
-.step .step__container .step__content .step__card:hover {
+.step .step__content .step__card:hover {
   transform: translateY(-8px);
   box-shadow: 0 16px 28px rgba(255, 217, 5, 0.15), 0 0 0 1px #ffd900;
   border-radius: 0.8rem;
 }
 
 .testimonials {
-  height: 100vh;
+  margin: 5rem 0;
   display: flex;
   justify-content: center;
 }
@@ -735,24 +731,22 @@ main {
   flex-direction: column;
   margin-top: 4rem;
 }
-.testimonials .testimonials__container h2 {
-  font-size: 3.2rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
-}
 .testimonials .testimonials__container h2 span {
   color: #ffd900;
   background: #0a0a0a;
   text-align: center;
 }
-.testimonials .testimonials__container .testimonials__cards {
+.testimonials .testimonials__subtitle {
+  margin-top: 1rem;
+}
+.testimonials .testimonials__cards {
   margin-top: 4rem;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card {
+.testimonials .testimonials__cards .testimonials__card {
   height: 12rem;
   border-radius: 0.5rem;
   display: block;
@@ -760,23 +754,23 @@ main {
   position: relative;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__star {
+.testimonials .testimonials__cards .testimonials__card .testimonials__star {
   color: #ffd900;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile {
+.testimonials .testimonials__cards .testimonials__card .testimonials__profile {
   position: absolute;
   bottom: 2rem;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--cleint {
+.testimonials .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--cleint {
   font-size: 1.2rem;
   font-weight: 700;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--category {
+.testimonials .testimonials__cards .testimonials__card .testimonials__profile .testimonials__profile--category {
   font-size: 0.8rem;
   margin-top: 0.5rem;
   color: #4c5663;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card .testimonials__clients {
+.testimonials .testimonials__cards .testimonials__card .testimonials__clients {
   max-width: 100%;
   margin: 0.8rem 0;
   max-height: 100%;
@@ -784,7 +778,7 @@ main {
   font-size: 1.2rem;
   font-weight: 400;
 }
-.testimonials .testimonials__container .testimonials__cards .testimonials__card:hover {
+.testimonials .testimonials__cards .testimonials__card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15), 0 0 0 1px #ffd900;
   border-radius: 0.8rem;
@@ -900,7 +894,7 @@ main {
 
 .pricing {
   height: 100vh;
-  padding: 5rem 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
 }
