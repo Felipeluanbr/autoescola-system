@@ -1,4 +1,4 @@
-import { loadComponents } from '../utilts/loadComponent.js'
+import { loadComponents } from '../utils/loadComponent.js'
 loadComponents("header", "../../components/header.html");
 loadComponents("footer", "../../components/footer.html");
 

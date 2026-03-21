@@ -1216,11 +1216,4 @@ main h2 {
 }
 .header .header__container .button:hover {
   background: #ffffff;
-}
-
-.footer {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
 }/*# sourceMappingURL=main.css.map */
