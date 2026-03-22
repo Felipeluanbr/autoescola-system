@@ -1,6 +1,7 @@
 import { loadComponents } from "../utils/loadComponent.js";
 loadComponents("header", "../../components/header.html");
 loadComponents("footer", "../../components/footer.html");
+loadComponents("cta" , "../../components/cta-card.html")
 
 import { getPost } from "../api/posts.js";
 
@@ -35,7 +36,7 @@ async function renderizarBlog() {
 
     </a>
 `;
-  } //
+  } 
 
   function rendercard(post) {
     return `
