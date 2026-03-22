@@ -25,19 +25,19 @@ async function renderizarBlog() {
     container.innerHTML = `
   <div class="banner-content">
     <a href="#"> 
-            <img src="${post.image}" alt="${post.title}">
+             <img src="${post.imag}" alt="${post.title}"> 
             <h2>${post.title}</h2>
             <p>${post.description}</p>
         </div>
 
     </a>
 `;
-  }
+  } //
 
   function rendercard(post) {
     return `
     <div class="card-content">
-            <img src="${post.image}" alt="${post.title}">
+            
             <h3>${post.title}</h3>
             <p>${post.description}</p>
         </div>

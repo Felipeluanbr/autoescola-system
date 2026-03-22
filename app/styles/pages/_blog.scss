@@ -1,3 +1,25 @@
+@use "../variables/fonts";
+@use "../variables/color";
+@use "../variables/spacing";
 
+main {
+  margin: auto;
+  width: 70%;
+}
 
-   
+#banner__container {
+  background: color.$color-secondary;
+  height: 30rem;
+  border-radius: 0.5rem;
+  margin-top: 6rem;
+  padding: 3rem;
+
+  a{
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+   color: color.$color-primary;
+  }
+
+  
+}

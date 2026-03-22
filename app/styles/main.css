@@ -1216,4 +1216,23 @@ main h2 {
 }
 .header .header__container .button:hover {
   background: #ffffff;
+}
+
+main {
+  margin: auto;
+  width: 70%;
+}
+
+#banner__container {
+  background: #ffd900;
+  height: 30rem;
+  border-radius: 0.5rem;
+  margin-top: 6rem;
+  padding: 3rem;
+}
+#banner__container a {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #0a0a0a;
 }/*# sourceMappingURL=main.css.map */
