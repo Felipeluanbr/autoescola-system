@@ -25,9 +25,12 @@ async function renderizarBlog() {
     container.innerHTML = `
   <div class="banner-content">
     <a href="#"> 
-             <img src="${post.imag}" alt="${post.title}"> 
+             <img src="${post.image}" alt="${post.title}"> 
+
+            <div> 
             <h2>${post.title}</h2>
             <p>${post.description}</p>
+            </div>
         </div>
 
     </a>

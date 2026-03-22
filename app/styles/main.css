@@ -1229,10 +1229,21 @@ main {
   border-radius: 0.5rem;
   margin-top: 6rem;
   padding: 3rem;
+  overflow: hidden;
 }
 #banner__container a {
   display: flex;
+  gap: 1rem;
+  color: #0a0a0a;
+  height: 100%;
+}
+#banner__container a img {
+  height: 30rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#banner__container a div {
+  display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: #0a0a0a;
 }/*# sourceMappingURL=main.css.map */

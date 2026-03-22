@@ -13,13 +13,23 @@ main {
   border-radius: 0.5rem;
   margin-top: 6rem;
   padding: 3rem;
+  overflow: hidden;
 
-  a{
-   display: flex;
-   flex-direction: column;
-   gap: 2rem;
-   color: color.$color-primary;
+  a {
+    display: flex;
+    
+    gap: 1rem;
+    color: color.$color-primary;
+     height: 100%;
+
+    img {
+      height: 30rem;
+      object-fit: cover;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
   }
-
-  
 }
