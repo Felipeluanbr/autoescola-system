@@ -19,5 +19,19 @@
     "description": "Aprenda como antecipar riscos e evitar acidentes no trânsito urbano e rodoviário.",
     "date": "20/05/2026",
     "image": "/app/assets/imags/technology-moto.png"
+  } ,
+   {
+    "id": 2,
+    "title": "Mudanças no Código de Trânsito Brasileiro",
+    "description": "Fique por dentro das novas regras de pontuação e validade da CNH que entraram em vigor.",
+    "date": "15/05/2026",
+    "image": "/app/assets/imags/technology-carro.png"
+  },
+  {
+    "id": 3,
+    "title": "Importância da Direção Defensiva",
+    "description": "Aprenda como antecipar riscos e evitar acidentes no trânsito urbano e rodoviário.",
+    "date": "20/05/2026",
+    "image": "/app/assets/imags/technology-moto.png"
   }
 ]

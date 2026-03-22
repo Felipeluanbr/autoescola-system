@@ -1246,4 +1246,48 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.posts__lists {
+  overflow: hidden;
+}
+.posts__lists #posts__container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 5rem 0;
+}
+
+#card__blog {
+  height: 20rem;
+  padding: 1rem;
+  color: #0a0a0a;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in;
+}
+#card__blog:hover {
+  background: #ffd900;
+  border: solid 0.05rem #0a0a0a;
+}
+
+.card-content {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.card-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.card-content img {
+  height: 50%;
+  height: 15rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.card-content p {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

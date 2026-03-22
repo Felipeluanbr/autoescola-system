@@ -39,11 +39,13 @@ async function renderizarBlog() {
 
   function rendercard(post) {
     return `
+    <a id="card__blog" href="#"> 
     <div class="card-content">
-            
+             <img src="${post.image}" alt="${post.title}"> 
             <h3>${post.title}</h3>
             <p>${post.description}</p>
         </div>
+    </a>
     `;
   }
 }

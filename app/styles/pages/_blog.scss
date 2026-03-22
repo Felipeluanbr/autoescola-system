@@ -17,19 +17,67 @@ main {
 
   a {
     display: flex;
-    
+
     gap: 1rem;
     color: color.$color-primary;
-     height: 100%;
+    height: 100%;
 
     img {
       height: 30rem;
       object-fit: cover;
     }
-    div{
+    div {
       display: flex;
       flex-direction: column;
       gap: 2rem;
     }
+  }
+}
+
+.posts__lists {
+  overflow: hidden;
+
+  #posts__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 5rem 0;
+  }
+}
+
+#card__blog {
+  height: 20rem;
+  padding: 1rem;
+  color: color.$color-primary;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in;
+
+  &:hover {
+
+    background: color.$color-secondary;
+    border: solid 0.05rem color.$color-primary;
+  }
+}
+
+.card-content {
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+
+  h3 {
+    font-size: fonts.$font-xs;
+    font-weight: fonts.$font-bold;
+  }
+
+  img {
+    height: 50%;
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  p {
+    font-size: fonts.$font-mn;
   }
 }
