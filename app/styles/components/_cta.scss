@@ -1,18 +1,23 @@
+@use "../variables/fonts";
+@use "../variables/color";
+
 .cta {
   display: flex;
   justify-content: center;
   background: color.$color-primary;
-  
+   border-radius: 0.5rem;
+
+  margin: 4rem 0rem;
+
   .cta__container {
     width: 60%;
     height: 24rem;
-    border-radius: 0.5rem;
+   
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-   
 
     p {
       color: color.$color-text;
@@ -61,7 +66,7 @@
         0 16px 28px rgba(255, 217, 5, 0.15),
         0 0 0 1px color.$color-secondary;
       border-radius: 0.8rem;
-      background: #e5e7eb;
+      background: color.$color-light; // Ajuste para usar variável se disponível, ou mantenha o hex se for intencional
     }
 
     .cta__localization {
