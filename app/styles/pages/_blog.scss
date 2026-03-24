@@ -58,6 +58,8 @@ main {
 
     background: color.$color-secondary;
     border: solid 0.05rem color.$color-primary;
+
+    
   }
 }
 
@@ -69,6 +71,9 @@ main {
   h3 {
     font-size: fonts.$font-xs;
     font-weight: fonts.$font-bold;
+
+   
+
   }
 
   img {
@@ -80,5 +85,6 @@ main {
   }
   p {
     font-size: fonts.$font-mn;
+    
   }
 }

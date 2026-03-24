@@ -11,7 +11,8 @@
     "title": "Mudanças no Código de Trânsito Brasileiro",
     "description": "Fique por dentro das novas regras de pontuação e validade da CNH que entraram em vigor.",
     "date": "15/05/2026",
-    "image": "/app/assets/imags/technology-carro.png"
+    "image": "/app/assets/imags/technology-carro.png",
+    "content": "<p>Nos últimos anos, o CTB passou por atualizações importantes no sistema de pontuação e no prazo de validade da CNH.</p><h4>Novo limite de pontos</h4><ul><li><strong>40 pontos:</strong> sem infrações gravíssimas;</li><li><strong>30 pontos:</strong> uma infração gravíssima;</li><li><strong>20 pontos:</strong> duas ou mais infrações gravíssimas.</li></ul><h4>Validade da CNH</h4><ul><li><strong>10 anos:</strong> motoristas até 49 anos;</li><li><strong>5 anos:</strong> entre 50 e 69 anos;</li><li><strong>3 anos:</strong> 70 anos ou mais.</li></ul><h4>O que muda na prática?</h4><p>Para motoristas e autoescolas, as mudanças trazem comodidade, mas exigem atenção redobrada às regras de segurança e atualizações na legislação.</p>"
   },
   {
     "id": 3,
@@ -19,8 +20,8 @@
     "description": "Aprenda como antecipar riscos e evitar acidentes no trânsito urbano e rodoviário.",
     "date": "20/05/2026",
     "image": "/app/assets/imags/technology-moto.png"
-  } ,
-   {
+  },
+  {
     "id": 2,
     "title": "Mudanças no Código de Trânsito Brasileiro",
     "description": "Fique por dentro das novas regras de pontuação e validade da CNH que entraram em vigor.",
