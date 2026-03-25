@@ -5,14 +5,15 @@
   display: flex;
   justify-content: center;
   background: color.$color-primary;
-   border-radius: 0.5rem;
-
-  margin: 4rem 0rem;
+  border-radius: 0.5rem;
+  margin: 4rem 0;
+  padding: 2rem 1rem; // Adicionado padding para respiro interno
 
   .cta__container {
-    width: 60%;
-    height: 24rem;
-   
+    width: 100%; // Ocupa largura total disponível
+    max-width: 60rem; // Mas limita o crescimento em telas grandes
+    height: auto; // Altura se adapta ao conteúdo
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +29,8 @@
       font-weight: fonts.$font-extra;
       margin-bottom: 1rem;
       color: color.$color-light;
-      width: 25rem;
+      width: 100%; // Remove largura fixa que quebra no mobile
+      max-width: 30rem;
       text-align: center;
 
       span {
@@ -39,7 +41,8 @@
     }
     a {
       display: flex;
-      width: 60%;
+      width: 100%;
+      max-width: 20rem; // Botão não fica gigante, mas preenche telas pequenas
       height: 3rem;
       border-radius: 0.5rem;
       justify-content: center;
