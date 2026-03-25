@@ -25,7 +25,7 @@ async function renderizarBlog() {
     const container = document.getElementById("banner__container");
     container.innerHTML = `
   <div class="banner-content">
-    <a href="/app/pages/post/post.html?id=${post.id}"> 
+    <a href="/app/website/pages/post/post.html?id=${post.id}"> 
              <img src="${post.image}" alt="${post.title}"> 
 
             <div> s
@@ -39,7 +39,7 @@ async function renderizarBlog() {
 
   function rendercard(post) {
     return `
-    <a id="card__blog" href="/app/pages/post/post.html?id=${post.id}"> 
+    <a id="card__blog" href="/app/website/pages/post/post.html?id=${post.id}"> 
     <div class="card-content">
              <img src="${post.image}" alt="${post.title}"> 
             <h3>${post.title}</h3>

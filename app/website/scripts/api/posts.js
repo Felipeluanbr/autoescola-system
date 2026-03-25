@@ -1,5 +1,5 @@
 export async function getPost(id) {
-  const url = "/app/scripts/data/posts.json";
+  const url = "/app/website/scripts/data/posts.json";
   
   try {
     const response = await fetch(url);
