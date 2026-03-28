@@ -1,6 +1,6 @@
-@use "../variables/fonts";
-@use "../variables/color";
-@use "../variables/spacing";
+@use "../../variables/fonts";
+@use "../../variables/color";
+@use "../../variables/spacing";
 
 .footer {
   background: color.$color-primary;

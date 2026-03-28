@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-
-/* @import "tailwindcss"; - Remova ou comente se não estiver usando Tailwind CLI, para evitar erro de MIME type */
 html {
   font-size: 62.5%;
 }
@@ -1411,4 +1409,76 @@ main {
   font-style: italic;
   color: #555;
   margin: 2rem 0;
+}
+
+#header-system {
+  font-family: "Roboto", sans-serif;
+  height: 4rem;
+  max-height: 8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-system__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 4rem;
+}
+
+.header-system__informative {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  gap: 2rem;
+  max-width: 35rem;
+}
+
+.header-system__search input {
+  background: #d2d2d3;
+  border: none;
+  height: 1rem;
+  width: 15rem;
+  border-radius: 3rem;
+  padding: 0.5rem 2rem;
+}
+
+.header-system__greeting {
+  font-weight: 900;
+  font-size: 1.8rem;
+}
+
+.header-system__profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header-system__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.header-system__name {
+  font-weight: 700;
+}
+
+.header-system__role {
+  font-weight: 300;
+}
+
+.header-system__avatar {
+  height: 3rem;
+  width: 3rem;
+  background: rgb(255, 217, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-system__avatar p {
+  font-size: 2rem;
 }/*# sourceMappingURL=main.css.map */
