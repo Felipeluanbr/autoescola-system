@@ -11,14 +11,12 @@
   - Organização de arquitetura
   - Separação por modulos
   - Componentizaçãos
-  - Uso de Tailwind
   - Estrutura escalável
 
 
 ## Tecnologias
  - HTML
  - CSS
- - Tailwind
  - JavaScript
 
 ## Estrutura do Projeto

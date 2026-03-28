@@ -4,16 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:watch": "tailwindcss -i ./public/styles/tailwind.css -o ./public/styles/output.css --watch",
-    "tailwind:build": "tailwindcss -i ./public/styles/tailwind.css -o ./public/styles/output.css --minify"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "dependencies": {
-    "@tailwindcss/cli": "^4.2.2",
-    "tailwindcss": "^4.2.2"
-  }
+  "dependencies": {}
 }
