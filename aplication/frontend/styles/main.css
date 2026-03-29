@@ -1453,6 +1453,19 @@ main {
   font-size: 1.8rem;
 }
 
+.header-system__text--icon {
+  display: inline-block;
+  animation: subirDescer 1s infinite ease-in-out;
+}
+
+@keyframes subirDescer {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .header-system__profile {
   display: flex;
   align-items: center;
