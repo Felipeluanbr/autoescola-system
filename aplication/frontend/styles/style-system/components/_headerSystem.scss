@@ -3,6 +3,10 @@
 
 
 #header-system{
+    top: 999;
+    position: absolute;
+    width: 85%;
+    right: 0;
     font-family: fonts.$font-primary;
     height: 4rem;
     max-height: 8rem;
@@ -79,3 +83,4 @@ font-weight: fonts.$font-bold;
 .header-system__avatar p{
     font-size: 2rem;
 }
+
